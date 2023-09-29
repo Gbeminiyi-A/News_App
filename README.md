@@ -64,7 +64,6 @@ This project is licensed under the MIT License.
 
 * The news app uses the News API to fetch top headlines.
 * The news app is built with Python and Flask.
-* The news app is deployed on Heroku.
 
 ### Contact
 
