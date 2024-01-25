@@ -2,7 +2,7 @@ import requests
 from flask import Flask, render_template, request
 import os
 
-NEWS_APIKEY = os.environ.get('YOUR_NEWS_API_KEY')
+NEWS_APIKEY = os.environ.get('NEWS_APIKEY')
 
 
 app = Flask(__name__)
@@ -61,4 +61,4 @@ def sport_news():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
