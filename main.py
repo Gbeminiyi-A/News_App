@@ -1,3 +1,4 @@
+import datetime
 import requests
 from flask import Flask, render_template, request
 import os
@@ -6,6 +7,8 @@ NEWS_APIKEY = os.environ.get('NEWS_APIKEY')
 
 
 app = Flask(__name__)
+
+year = datetime.datetime.now().year
 
 
 @app.route("/", methods=['GET', 'POST'])
@@ -21,7 +24,7 @@ def home_page():
         search_response = requests.get(search_url)
         search_articles = search_response.json()['articles']
         return render_template('search.html', search_articles=search_articles)
-    return render_template('home.html', articles=articles)
+    return render_template('home.html', articles=articles, year=year)
 
 
 @app.route("/nigeria", methods=['GET', 'POST'])
