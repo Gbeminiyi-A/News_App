@@ -24,7 +24,7 @@ def home_page():
     return render_template('home.html', articles=articles)
 
 
-@app.route("/Nigeria", methods=['GET', 'POST'])
+@app.route("/nigeria", methods=['GET', 'POST'])
 def nigerian_news():
     url = ('https://newsapi.org/v2/top-headlines?'
            f'apiKey={NEWS_APIKEY}&country=ng')
@@ -42,7 +42,7 @@ def nigerian_news():
     return render_template('nigeria.html', articles=articles)
 
 
-@app.route("/Sports", methods=['GET', 'POST'])
+@app.route("/sports", methods=['GET', 'POST'])
 def sport_news():
     url = ('https://newsapi.org/v2/top-headlines?'
            f'apiKey={NEWS_APIKEY}&category=sports')
