@@ -21,7 +21,7 @@ def home_page():
         search_response = requests.get(search_url)
         search_articles = search_response.json()['articles']
         return render_template('search.html', search_articles=search_articles)
-    return render_template('index.html', articles=articles)
+    return render_template('home.html', articles=articles)
 
 
 @app.route("/Nigeria", methods=['GET', 'POST'])
@@ -61,4 +61,4 @@ def sport_news():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
