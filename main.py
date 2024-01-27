@@ -63,5 +63,10 @@ def country_page(country):
     return render_template('category.html', articles=articles, year=year, category=country.upper())
 
 
+@app.route("/subscribe", methods=['GET', 'POST'])
+def subscribe_page():
+    return render_template('subscribe.html')
+
+
 if __name__ == "__main__":
     app.run()
