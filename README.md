@@ -17,7 +17,7 @@ A simple web application that uses the News API to display top headlines from ar
 
 ### Usage
 
-2. Browse the top headlines, search for news articles, or view news headlines from Nigeria or sports headlines.
+Browse the top headlines, search for news articles, or view news headlines from Nigeria or sports headlines.
 
 ## Tech
 
