@@ -17,10 +17,6 @@ A simple web application that uses the News API to display top headlines from ar
 
 ### Usage
 
-1. Visit the following URL in your web browser:
-```sh
-http://localhost:5000/
-```
 2. Browse the top headlines, search for news articles, or view news headlines from Nigeria or sports headlines.
 
 ## Tech
