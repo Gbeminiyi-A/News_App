@@ -62,6 +62,3 @@ def country_page(country):
 def subscribe_page():
     return render_template('subscribe.html')
 
-
-if __name__ == "__main__":
-    app.run()
